@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+
+  ros:
+    # stdin_open: true
+    # tty: true
+
+    image: 'ros:noetic-ros-base-focal'
+    network_mode: 'host'
+    environment:
+      - ROS_MASTER_URI=http://192.168.122.1:11311/
+      - ROS_IP=192.168.122.1
+    command: 'roscore'

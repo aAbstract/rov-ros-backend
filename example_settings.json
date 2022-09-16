@@ -1,0 +1,39 @@
+{
+    "networking": {
+        "main_tcu": "192.168.122.1",
+        "raspi": "192.168.122.16",
+        "monitor_tcu": "192.168.122.1"
+    },
+    "ros": {
+        "msg_queue_size": 10,
+        "nodes": {
+            "main_tcu": [
+                "example_input_tcu_node"
+            ],
+            "monitor_tcu": [
+                "logging_node"
+            ],
+            "raspi": [
+                "example_output_raspi_node"
+            ]
+        }
+    },
+    "system": {
+        "debug": true,
+        "allowed_log_levels": [
+            "ERROR",
+            "INFO",
+            "DEBUG"
+        ]
+    },
+    "security": {
+        "main_tcu": {
+            "username": "machine_ssh_username",
+            "password": "machine_ssh_password"
+        },
+        "raspi": {
+            "username": "machine_ssh_username",
+            "password": "machine_ssh_password"
+        }
+    }
+}
