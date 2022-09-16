@@ -6,7 +6,7 @@
 ## How to Run
 ```
 1- configure your network then write its IPs in the settings.json and docker-compose.yml files
-2- python ros_lauch.py
+2- python ros_launch.py
 ```
 
 ## Required Dependencies
